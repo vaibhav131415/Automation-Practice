@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.Webtable">
+      <class name="Tests.Login">
         <methods>
-          <include name="Configuration"/>
+          <include name="moneylink"/>
           <include name="afterconfig"/>
-          <include name="Ajaxcall"/>
+          <include name="Configuration"/>
         </methods>
-      </class> <!-- Tests.Webtable -->
+      </class> <!-- Tests.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

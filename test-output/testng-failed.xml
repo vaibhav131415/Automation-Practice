@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SampleProjectSuite]">
+  <test thread-count="5" name="Tests(failed)">
     <classes>
-      <class name="Tests.Webtable">
+      <class name="Tests.addStocks">
         <methods>
-          <include name="Configuration"/>
+          <include name="addingstocks"/>
           <include name="afterconfig"/>
-          <include name="Ajaxcall"/>
+          <include name="Configuration"/>
         </methods>
-      </class> <!-- Tests.Webtable -->
+      </class> <!-- Tests.addStocks -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Tests(failed) -->
+</suite> <!-- Failed suite [SampleProjectSuite] -->

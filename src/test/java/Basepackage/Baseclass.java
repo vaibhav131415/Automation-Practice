@@ -1,12 +1,10 @@
 package Basepackage;
 
-import java.time.Duration;
+
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -19,9 +17,8 @@ public class Baseclass {
 
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://practice.automationtesting.in/");
-		String handle = driver.getWindowHandle();
-		System.out.println(handle);
+		driver.get("http://rediff.com/");
+		
 		
 
 	}
