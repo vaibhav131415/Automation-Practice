@@ -7,7 +7,7 @@
 
     <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
     <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -24,22 +24,22 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-SampleProjectSuite">
+            <a href="#" panel-name="suite-SampleProjectSuite" class="navigator-link">
               <span class="suite-name border-failed">SampleProjectSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-SampleProjectSuite">
-                    <span>C:\Users\AVV4MD744\git\repository2\Sampleproject\testng.xml</span>
+                  <a href="#" panel-name="test-xml-SampleProjectSuite" class="navigator-link ">
+                    <span>C:\Users\sprab\git\Automation-Practice\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-SampleProjectSuite">
+                  <a href="#" panel-name="testlist-SampleProjectSuite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-SampleProjectSuite">
+                  <a href="#" panel-name="group-SampleProjectSuite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-SampleProjectSuite">
+                  <a href="#" panel-name="times-SampleProjectSuite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-SampleProjectSuite">
+                  <a href="#" panel-name="reporter-SampleProjectSuite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-SampleProjectSuite">
+                  <a href="#" panel-name="ignored-methods-SampleProjectSuite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-SampleProjectSuite">
+                  <a href="#" panel-name="chronological-SampleProjectSuite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,8 +103,8 @@
                     </span>
                     <div class="method-list-content failed suite-SampleProjectSuite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-SampleProjectSuite" title="Tests.addStocks" hash-for-method="addingstocks">addingstocks</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SampleProjectSuite" title="Tests.Login" class="method navigator-link" hash-for-method="TitleCheck">TitleCheck</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-SampleProjectSuite -->
@@ -117,23 +117,13 @@
                     </span>
                     <div class="method-list-content passed suite-SampleProjectSuite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-SampleProjectSuite" title="Tests.addStocks" hash-for-method="TitleCheck">TitleCheck</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SampleProjectSuite" title="Tests.Login" class="method navigator-link" hash-for-method="ValidLogin">ValidLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-SampleProjectSuite" title="Tests.addStocks" hash-for-method="ValidLogin">ValidLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-SampleProjectSuite" title="Tests.addStocks" hash-for-method="moneylink">moneylink</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-SampleProjectSuite" title="Tests.addStocks" hash-for-method="portfolio">portfolio</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SampleProjectSuite" title="Tests.Login" class="method navigator-link" hash-for-method="moneylink">moneylink</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-SampleProjectSuite -->
@@ -151,48 +141,7 @@
           <div class="suite-SampleProjectSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Tests.addStocks</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addingstocks">
-                  </a> <!-- addingstocks -->
-                  <span class="method-name">addingstocks</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=97.0.4692.99)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;DESKTOP-OU0V01B&apos;, ip: &apos;9.43.22.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cee6c2be0b2fb59fcf65a72197b0d323, findChildElement {id=74a478d5-f273-42bc-94bb-10bccb40ba49, using=id, value=radio}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\AVV4MD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65124}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65124/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cee6c2be0b2fb59fcf65a72197b0d323
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:221)
-	at Tests.addStocks.addingstocks(addStocks.java:50)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Adding stocks)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SampleProjectSuite-class-failed -->
-          <div class="suite-SampleProjectSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Tests.addStocks</span>
+              <span class="class-name">Tests.Login</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -200,10 +149,24 @@ Session ID: cee6c2be0b2fb59fcf65a72197b0d323
                   <a name="TitleCheck">
                   </a> <!-- TitleCheck -->
                   <span class="method-name">TitleCheck</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Rediff.com: News | Rediffmail | Stock Quotes | Shoppingpingngngngngngng / kkk] but found [Rediff.com: News | Rediffmail | Stock Quotes | Shopping]
+	at Tests.Login.TitleCheck(Login.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (To Verify the Title of the Page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SampleProjectSuite-class-failed -->
+          <div class="suite-SampleProjectSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="ValidLogin">
@@ -222,30 +185,21 @@ Session ID: cee6c2be0b2fb59fcf65a72197b0d323
 (Click on money link and assert)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="portfolio">
-                  </a> <!-- portfolio -->
-                  <span class="method-name">portfolio</span>
-                  <em>
-(Perform Slider Operation)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-SampleProjectSuite-class-passed -->
         </div> <!-- panel SampleProjectSuite -->
         <div panel-name="test-xml-SampleProjectSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\AVV4MD744\git\repository2\Sampleproject\testng.xml</span>
+            <span class="header-content">C:\Users\sprab\git\Automation-Practice\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;SampleProjectSuite&quot;&gt;
+&lt;suite name=&quot;SampleProjectSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Tests&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Tests.addStocks&quot;/&gt;
+      &lt;class name=&quot;Tests.Login&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Tests --&gt;
 &lt;/suite&gt; &lt;!-- SampleProjectSuite --&gt;
@@ -285,32 +239,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'moneylink')
-data.setCell(0, 2, 'Tests.addStocks')
-data.setCell(0, 3, 11462);
+data.setCell(0, 1, 'ValidLogin')
+data.setCell(0, 2, 'Tests.Login')
+data.setCell(0, 3, 8475);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addingstocks')
-data.setCell(1, 2, 'Tests.addStocks')
-data.setCell(1, 3, 10669);
+data.setCell(1, 1, 'moneylink')
+data.setCell(1, 2, 'Tests.Login')
+data.setCell(1, 3, 8134);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'ValidLogin')
-data.setCell(2, 2, 'Tests.addStocks')
-data.setCell(2, 3, 8596);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'portfolio')
-data.setCell(3, 2, 'Tests.addStocks')
-data.setCell(3, 3, 6834);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TitleCheck')
-data.setCell(4, 2, 'Tests.addStocks')
-data.setCell(4, 3, 17);
+data.setCell(2, 1, 'TitleCheck')
+data.setCell(2, 2, 'Tests.Login')
+data.setCell(2, 3, 14);
 window.suiteTableData['SampleProjectSuite']= { tableData: data, tableDiv: 'times-div-SampleProjectSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-SampleProjectSuite">
               </div> <!-- times-div-SampleProjectSuite -->
             </div> <!-- times-div -->
@@ -325,16 +271,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-SampleProjectSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Tests.addStocks</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">deleteportfolio</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-SampleProjectSuite" class="panel">
@@ -343,36 +282,40 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Tests.addStocks</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Tests.Login</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">Configuration</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">TitleCheck</span>
-                <span class="method-start">35489 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">moneylink</span>
-                <span class="method-start">35511 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">ValidLogin</span>
-                <span class="method-start">46976 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">portfolio</span>
-                <span class="method-start">55573 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">addingstocks</span>
-                <span class="method-start">62408 ms</span>
+                <span class="method-name">TitleCheck</span>
+                <span class="method-start">39272 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=TitleCheck status=FAILURE method=Login.TitleCheck()[pri:1, instance:Tests.Login@662...)</span>
+                <span class="method-start">39289 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">moneylink</span>
+                <span class="method-start">39665 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=moneylink status=SUCCESS method=Login.moneylink()[pri:2, instance:Tests.Login@662b4...)</span>
+                <span class="method-start">47800 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">ValidLogin</span>
+                <span class="method-start">47801 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=ValidLogin status=SUCCESS method=Login.ValidLogin()[pri:3, instance:Tests.Login@662...)</span>
+                <span class="method-start">56276 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterconfig</span>
-                <span class="method-start">73113 ms</span>
+                <span class="method-start">56303 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

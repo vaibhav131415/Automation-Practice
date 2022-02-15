@@ -3,7 +3,7 @@
 <suite name="SampleProjectSuite">
   <test thread-count="5" name="Tests">
     <classes>
-      <class name="Tests.addStocks"/>
+      <class name="Tests.Login"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
