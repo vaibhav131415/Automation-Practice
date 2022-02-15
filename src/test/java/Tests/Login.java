@@ -30,12 +30,12 @@ public class Login extends Baseclass{
 	public SoftAssert assertion = new SoftAssert();
 
 	@Test(priority = 1 , description = "To Verify the Title of the Page")
-	public void TitleCheck() {
+	public void TitleCheck()  {
          test = extent.createTest("Verify the homepage title");
 //		String actual = driver.getTitle();
 //		String Expected = "Rediff.com: News | Rediffmail | Stock Quotes | Shopping";
 		SoftAssert softassert = new SoftAssert();
-		softassert.assertEquals(driver.getTitle(), "Rediff.com: News | Rediffmail | Stock Quotes | Shoppingpingngngngngngng / kkk");
+		softassert.assertEquals(driver.getTitle(), "Rediff.com: News | Rediffmail | Stock Quotes | Shoppingpingngngngngngng / kkkk");
       softassert.assertAll();
 	}
 
