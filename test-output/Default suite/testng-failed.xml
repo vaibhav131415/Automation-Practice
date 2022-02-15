@@ -6,8 +6,10 @@
       <class name="Tests.Login">
         <methods>
           <include name="Configuration"/>
+          <include name="getResult"/>
           <include name="afterconfig"/>
           <include name="ValidLogin"/>
+          <include name="TitleCheck"/>
         </methods>
       </class> <!-- Tests.Login -->
     </classes>

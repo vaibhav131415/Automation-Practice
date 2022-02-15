@@ -48,11 +48,11 @@ public class Login extends Baseclass{
 		driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/a[2]")).click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 		}catch(Exception e) {
-			test.log(Status.FAIL,MarkupHelper.createLabel("failed", ExtentColor.RED));
+			
 			throw e;
 		}
 		//WebElement actual1 = driver.findElement(By.xpath("//*[@id=\"wrapper\"]/div[2]/div[1]/a/span"));
-		test.pass("user navigation passed");
+		
 		
        
 		
@@ -79,9 +79,10 @@ public class Login extends Baseclass{
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		
 		
-	WebElement ele1 = 	driver.findElement(By.xpath("//*[@id=\"username\"]/a"));
+	String ele1 = 	driver.findElement(By.xpath("//*[@id=\"username\"]/a")).getText();
+	
 //	String ele2 = "Test";
-	assertion.assertEquals(ele1, "vaibhav");
+	Assert.assertEquals(ele1, "vaibhaviiiiiiiiiii");
 		
 			
 		

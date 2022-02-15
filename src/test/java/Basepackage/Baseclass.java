@@ -32,11 +32,11 @@ public class Baseclass {
 	public ExtentReports extent;
 	public ExtentTest test;
 
-	@BeforeSuite (alwaysRun=true)
+	@BeforeSuite
 	public void Configuration() {
 		
 		
-		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "\\Automation Report\\ExtentReport.html");
+		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "//Automation Report//ExtentReport.html");
 		extent = new ExtentReports();  //create object of ExtentReports
 		extent.attachReporter(htmlReporter);
 
@@ -48,7 +48,7 @@ public class Baseclass {
 		extent.setSystemInfo("Application Name", "Rediff Test");
 		extent.setSystemInfo("User Name", "Vaibhav Prabhugaonkar");
 		extent.setSystemInfo("Envirnoment", "Satging");
-		htmlReporter.config().setAutoCreateRelativePathMedia(true);
+		
 		
 		
 		
@@ -65,19 +65,19 @@ public class Baseclass {
 		
 
 	}
-	@AfterSuite(alwaysRun=true)
+	@AfterSuite
 	public void afterconfig() {
-
-		driver.quit();
 		extent.flush();
+		driver.quit();
+		
 	}
 	
 	public static String getScreenShot(WebDriver driver, String screenshotName) throws IOException {
-		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+		String dateName = new SimpleDateFormat("yyyy-MM-dd-hh-mm-ss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		// after execution, you could see a folder "FailedTestsScreenshots" under src folder
-		String destination = System.getProperty("user.dir") + "/Screenshots/" + screenshotName + dateName + ".png";
+		String destination = System.getProperty("user.dir") + "/Screenshots/" + screenshotName +" "+ dateName + ".png";
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(source, finalDestination);
 		return destination;
