@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.logging.FileHandler;
+
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -91,7 +91,7 @@ public class Baseclass {
 	test.log(Status.FAIL, MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.RED));
 	//To capture screenshot path and store the path of the screenshot in the string "screenshotPath"
 	//We do pass the path captured by this method in to the extent reports using "logger.addScreenCapture" method.
-	//String Scrnshot=TakeScreenshot.captuerScreenshot(driver,"TestCaseFailed");
+	//String Screenshot=TakeScreenshot.captuerScreenshot(driver,"TestCaseFailed");
 	String screenshotPath = getScreenShot(driver, result.getName());
 	//To add it in the extent report
 	test.fail("Test Case Failed Snapshot is below " + test.addScreenCaptureFromPath(screenshotPath));
