@@ -35,8 +35,8 @@ public class Login extends Baseclass{
 //		String actual = driver.getTitle();
 //		String Expected = "Rediff.com: News | Rediffmail | Stock Quotes | Shopping";
 		SoftAssert softassert = new SoftAssert();
-		softassert.assertEquals(driver.getTitle(), "Rediff.com: News | Rediffmail | Stock Quotes | Shoppingpingngngngngngng / kkkk");
-      softassert.assertAll();
+		softassert.assertEquals(driver.getTitle(), "Rediff.com: News | Rediffmail | Stock Quotes | Shopping");
+                softassert.assertAll();
 	}
 
 
@@ -75,7 +75,7 @@ public class Login extends Baseclass{
 	String ele1 = 	driver.findElement(By.xpath("//*[@id=\"username\"]/a")).getText();
 	
 //	String ele2 = "Test";
-	Assert.assertEquals(ele1, "vaibhaviiiiiiiiiii");
+	Assert.assertEquals(ele1, "vaibhav");
 		
 			
 		
