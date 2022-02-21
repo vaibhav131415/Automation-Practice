@@ -54,14 +54,7 @@ public class Login extends Baseclass{
 		//WebElement actual1 = driver.findElement(By.xpath("//*[@id=\"wrapper\"]/div[2]/div[1]/a/span"));
 		
 		
-       
-		
-			
-		
-		
-
-
-	}
+   }
 
 
 
