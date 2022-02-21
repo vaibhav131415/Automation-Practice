@@ -35,30 +35,24 @@ public class Baseclass {
 	@BeforeSuite
 	public void Configuration() {
 		
-		
+		//extent report configuration
 		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "//Automation Report//ExtentReport.html");
 		extent = new ExtentReports();  //create object of ExtentReports
 		extent.attachReporter(htmlReporter);
-
+                
+		//extent report Document configuration
 		htmlReporter.config().setDocumentTitle("Rediif Test Report"); // Tittle of Report
 		htmlReporter.config().setReportName("Rediif Test Report"); // Name of the report
 		htmlReporter.config().setTheme(Theme.DARK);//Default Theme of Report
 
 		// General information releated to application
 		extent.setSystemInfo("Application Name", "Rediff Test");
-		extent.setSystemInfo("User Name", "Vaibhav Prabhugaonkar");
+		extent.setSystemInfo("User Name", "Vaibhav Prabhu Gaonkar");
 		extent.setSystemInfo("Envirnoment", "Satging");
 		
-		
-		
-		
-		
-		
-		
-		
+		//driver setup
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sprab\\git\\Automation-Practice\\Chromdriver\\chromedriver.exe");
-
-		driver = new ChromeDriver();
+                driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://rediff.com/");
 		
@@ -67,21 +61,12 @@ public class Baseclass {
 	}
 	@AfterSuite
 	public void afterconfig() {
+		
+		//clearing the content of the extent report after a test cycle
 		extent.flush();
 		driver.quit();
 		
 	}
-	
-	public static String getScreenShot(WebDriver driver, String screenshotName) throws IOException {
-		String dateName = new SimpleDateFormat("yyyy-MM-dd-hh-mm-ss").format(new Date());
-		TakesScreenshot ts = (TakesScreenshot) driver;
-		File source = ts.getScreenshotAs(OutputType.FILE);
-		// after execution, you could see a folder "FailedTestsScreenshots" under src folder
-		String destination = System.getProperty("user.dir") + "/Screenshots/" + screenshotName +" "+ dateName + ".png";
-		File finalDestination = new File(destination);
-		FileUtils.copyFile(source, finalDestination);
-		return destination;
-		}
 	
 	@AfterMethod
 	public void getResult(ITestResult result) throws Exception{
@@ -105,6 +90,20 @@ public class Baseclass {
 	}
 	
 	}
+	
+	//Get Screenshot method
+	public static String getScreenShot(WebDriver driver, String screenshotName) throws IOException {
+		String dateName = new SimpleDateFormat("yyyy-MM-dd-hh-mm-ss").format(new Date());
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		// after execution, you could see a folder "FailedTestsScreenshots" under src folder
+		String destination = System.getProperty("user.dir") + "/Screenshots/" + screenshotName +" "+ dateName + ".png";
+		File finalDestination = new File(destination);
+		FileUtils.copyFile(source, finalDestination);
+		return destination;
+		}
+	
+	
 
 
 }
