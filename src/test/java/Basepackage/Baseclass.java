@@ -51,7 +51,7 @@ public class Baseclass {
 		extent.setSystemInfo("Envirnoment", "Satging");
 		
 		//driver setup
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sprab\\git\\Automation-Practice\\Chromdriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", ".//Chromdriver//chromedriver.exe");
                 driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://rediff.com/");

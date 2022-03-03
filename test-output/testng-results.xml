@@ -1,127 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-15T17:39:05 IST" name="SampleProjectSuite" finished-at="2022-02-15T17:39:21 IST" duration-ms="15997">
+  <suite started-at="2022-03-03T12:16:37 IST" name="SampleProjectSuite" finished-at="2022-03-03T12:16:56 IST" duration-ms="18887">
     <groups>
     </groups>
-    <test started-at="2022-02-15T17:39:05 IST" name="Tests" finished-at="2022-02-15T17:39:21 IST" duration-ms="15997">
+    <test started-at="2022-03-03T12:16:37 IST" name="Tests" finished-at="2022-03-03T12:16:56 IST" duration-ms="18887">
       <class name="Tests.Login">
-        <test-method is-config="true" signature="Configuration()[pri:0, instance:Tests.Login@662b4c69]" started-at="2022-02-15T17:38:45 IST" name="Configuration" finished-at="2022-02-15T17:39:05 IST" duration-ms="20389" status="PASS">
+        <test-method is-config="true" signature="Configuration()[pri:0, instance:Tests.Login@1e1a0406]" started-at="2022-03-03T12:15:56 IST" name="Configuration" finished-at="2022-03-03T12:16:37 IST" duration-ms="40883" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Configuration -->
-        <test-method signature="TitleCheck()[pri:1, instance:Tests.Login@662b4c69]" started-at="2022-02-15T17:39:05 IST" name="TitleCheck" description="To Verify the Title of the Page" finished-at="2022-02-15T17:39:05 IST" duration-ms="15" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [Rediff.com: News | Rediffmail | Stock Quotes | Shoppingpingngngngngngng / kkkk] but found [Rediff.com: News | Rediffmail | Stock Quotes | Shopping]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [Rediff.com: News | Rediffmail | Stock Quotes | Shoppingpingngngngngngng / kkkk] but found [Rediff.com: News | Rediffmail | Stock Quotes | Shopping]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at Tests.Login.TitleCheck(Login.java:39)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="TitleCheck()[pri:1, instance:Tests.Login@1e1a0406]" started-at="2022-03-03T12:16:37 IST" name="TitleCheck" description="To Verify the Title of the Page" finished-at="2022-03-03T12:16:37 IST" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TitleCheck -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Tests.Login@662b4c69]" started-at="2022-02-15T17:39:05 IST" name="getResult" finished-at="2022-02-15T17:39:06 IST" duration-ms="413" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Tests.Login@1e1a0406]" started-at="2022-03-03T12:16:37 IST" name="getResult" finished-at="2022-03-03T12:16:37 IST" duration-ms="15" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TitleCheck status=FAILURE method=Login.TitleCheck()[pri:1, instance:Tests.Login@662b4c69] output={null}]]]>
+                <![CDATA[[TestResult name=TitleCheck status=SUCCESS method=Login.TitleCheck()[pri:1, instance:Tests.Login@1e1a0406] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="moneylink()[pri:2, instance:Tests.Login@662b4c69]" started-at="2022-02-15T17:39:06 IST" name="moneylink" description="Click on money link and assert" finished-at="2022-02-15T17:39:15 IST" duration-ms="8981" status="PASS">
+        <test-method signature="moneylink()[pri:2, instance:Tests.Login@1e1a0406]" started-at="2022-03-03T12:16:37 IST" name="moneylink" description="Click on money link and assert" finished-at="2022-03-03T12:16:41 IST" duration-ms="3548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- moneylink -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Tests.Login@662b4c69]" started-at="2022-02-15T17:39:15 IST" name="getResult" finished-at="2022-02-15T17:39:15 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Tests.Login@1e1a0406]" started-at="2022-03-03T12:16:41 IST" name="getResult" finished-at="2022-03-03T12:16:41 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=moneylink status=SUCCESS method=Login.moneylink()[pri:2, instance:Tests.Login@662b4c69] output={null}]]]>
+                <![CDATA[[TestResult name=moneylink status=SUCCESS method=Login.moneylink()[pri:2, instance:Tests.Login@1e1a0406] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="ValidLogin()[pri:3, instance:Tests.Login@662b4c69]" started-at="2022-02-15T17:39:15 IST" name="ValidLogin" description="To verify valid login scenario" finished-at="2022-02-15T17:39:21 IST" duration-ms="6419" status="FAIL">
+        <test-method signature="ValidLogin()[pri:3, instance:Tests.Login@1e1a0406]" started-at="2022-03-03T12:16:41 IST" name="ValidLogin" description="To verify valid login scenario" finished-at="2022-03-03T12:16:56 IST" duration-ms="15076" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [vaibhaviiiiiiiiiii] but found [Vaibhav]]]>
+              <![CDATA[expected [vaibhav] but found [Vaibhav]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [vaibhaviiiiiiiiiii] but found [Vaibhav]
+              <![CDATA[java.lang.AssertionError: expected [vaibhav] but found [Vaibhav]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at Tests.Login.ValidLogin(Login.java:85)
+at Tests.Login.ValidLogin(Login.java:72)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
@@ -131,18 +89,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidLogin -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Tests.Login@662b4c69]" started-at="2022-02-15T17:39:21 IST" name="getResult" finished-at="2022-02-15T17:39:21 IST" duration-ms="143" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Tests.Login@1e1a0406]" started-at="2022-03-03T12:16:56 IST" name="getResult" finished-at="2022-03-03T12:16:56 IST" duration-ms="173" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ValidLogin status=FAILURE method=Login.ValidLogin()[pri:3, instance:Tests.Login@662b4c69] output={null}]]]>
+                <![CDATA[[TestResult name=ValidLogin status=FAILURE method=Login.ValidLogin()[pri:3, instance:Tests.Login@1e1a0406] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="afterconfig()[pri:0, instance:Tests.Login@662b4c69]" started-at="2022-02-15T17:39:21 IST" name="afterconfig" finished-at="2022-02-15T17:39:22 IST" duration-ms="987" status="PASS">
+        <test-method is-config="true" signature="afterconfig()[pri:0, instance:Tests.Login@1e1a0406]" started-at="2022-03-03T12:16:56 IST" name="afterconfig" finished-at="2022-03-03T12:16:58 IST" duration-ms="1778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterconfig -->

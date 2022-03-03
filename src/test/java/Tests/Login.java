@@ -3,7 +3,7 @@ package Tests;
 
 
 
-import static org.testng.Assert.assertEquals;
+
 
 import java.io.IOException;
 import java.time.Duration;
@@ -11,17 +11,11 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 
-import org.openqa.selenium.WebElement;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.Markup;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
 
 import Basepackage.Baseclass;
 
@@ -36,7 +30,7 @@ public class Login extends Baseclass{
 //		String Expected = "Rediff.com: News | Rediffmail | Stock Quotes | Shopping";
 		SoftAssert softassert = new SoftAssert();
 		softassert.assertEquals(driver.getTitle(), "Rediff.com: News | Rediffmail | Stock Quotes | Shopping");
-                softassert.assertAll();
+        softassert.assertAll();
 	}
 
 

@@ -1,18 +1,14 @@
 package Tests;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
+
 import java.time.Duration;
-import java.util.Calendar;
-import java.util.Date;
+
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
+
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 import org.testng.annotations.Test;
 
 public class addStocks extends createPortfolio {
