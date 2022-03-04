@@ -69,7 +69,7 @@ public class Login extends Baseclass{
 	String ele1 = 	driver.findElement(By.xpath("//*[@id=\"username\"]/a")).getText();
 	
 //	String ele2 = "Test";
-	Assert.assertEquals(ele1, "vaibhav");
+	Assert.assertEquals(ele1, "Vaibhav");
 		
 			
 		
