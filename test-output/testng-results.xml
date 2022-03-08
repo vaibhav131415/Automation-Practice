@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-03T12:16:37 IST" name="SampleProjectSuite" finished-at="2022-03-03T12:16:56 IST" duration-ms="18887">
+  <suite started-at="2022-03-04T16:10:02 IST" name="Default suite" finished-at="2022-03-04T16:10:30 IST" duration-ms="27580">
     <groups>
     </groups>
-    <test started-at="2022-03-03T12:16:37 IST" name="Tests" finished-at="2022-03-03T12:16:56 IST" duration-ms="18887">
+    <test started-at="2022-03-04T16:10:02 IST" name="Default test" finished-at="2022-03-04T16:10:30 IST" duration-ms="27580">
       <class name="Tests.Login">
-        <test-method is-config="true" signature="Configuration()[pri:0, instance:Tests.Login@1e1a0406]" started-at="2022-03-03T12:15:56 IST" name="Configuration" finished-at="2022-03-03T12:16:37 IST" duration-ms="40883" status="PASS">
+        <test-method is-config="true" signature="Configuration()[pri:0, instance:Tests.Login@1e1a0406]" started-at="2022-03-04T16:09:23 IST" name="Configuration" finished-at="2022-03-04T16:10:02 IST" duration-ms="39217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Configuration -->
-        <test-method signature="TitleCheck()[pri:1, instance:Tests.Login@1e1a0406]" started-at="2022-03-03T12:16:37 IST" name="TitleCheck" description="To Verify the Title of the Page" finished-at="2022-03-03T12:16:37 IST" duration-ms="25" status="PASS">
+        <test-method signature="TitleCheck()[pri:1, instance:Tests.Login@1e1a0406]" started-at="2022-03-04T16:10:02 IST" name="TitleCheck" description="To Verify the Title of the Page" finished-at="2022-03-04T16:10:02 IST" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TitleCheck -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Tests.Login@1e1a0406]" started-at="2022-03-03T12:16:37 IST" name="getResult" finished-at="2022-03-03T12:16:37 IST" duration-ms="15" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Tests.Login@1e1a0406]" started-at="2022-03-04T16:10:02 IST" name="getResult" finished-at="2022-03-04T16:10:02 IST" duration-ms="18" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,35 +26,44 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="moneylink()[pri:2, instance:Tests.Login@1e1a0406]" started-at="2022-03-03T12:16:37 IST" name="moneylink" description="Click on money link and assert" finished-at="2022-03-03T12:16:41 IST" duration-ms="3548" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- moneylink -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Tests.Login@1e1a0406]" started-at="2022-03-03T12:16:41 IST" name="getResult" finished-at="2022-03-03T12:16:41 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=moneylink status=SUCCESS method=Login.moneylink()[pri:2, instance:Tests.Login@1e1a0406] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="ValidLogin()[pri:3, instance:Tests.Login@1e1a0406]" started-at="2022-03-03T12:16:41 IST" name="ValidLogin" description="To verify valid login scenario" finished-at="2022-03-03T12:16:56 IST" duration-ms="15076" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="moneylink()[pri:2, instance:Tests.Login@1e1a0406]" started-at="2022-03-04T16:10:02 IST" name="moneylink" description="Click on money link and assert" finished-at="2022-03-04T16:10:13 IST" duration-ms="10620" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[expected [vaibhav] but found [Vaibhav]]]>
+              <![CDATA[target frame detached
+  (Session info: chrome=99.0.4844.51)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'GOL014218', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [794728ca7bc7df58332833eeaf11820b, clickElement {id=b4ee0bc0-b1bd-4e55-ac1f-040df0b74757}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\VAIBHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51249}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51249/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (794728ca7bc7df58332833eeaf11820b)] -> xpath: /html/body/div[2]/div/div[2]/a[2]]
+Session ID: 794728ca7bc7df58332833eeaf11820b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [vaibhav] but found [Vaibhav]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at Tests.Login.ValidLogin(Login.java:72)
+              <![CDATA[org.openqa.selenium.WebDriverException: target frame detached
+  (Session info: chrome=99.0.4844.51)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'GOL014218', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [794728ca7bc7df58332833eeaf11820b, clickElement {id=b4ee0bc0-b1bd-4e55-ac1f-040df0b74757}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\VAIBHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51249}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51249/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (794728ca7bc7df58332833eeaf11820b)] -> xpath: /html/body/div[2]/div/div[2]/a[2]]
+Session ID: 794728ca7bc7df58332833eeaf11820b
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at Tests.Login.moneylink(Login.java:42)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -85,26 +94,41 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidLogin -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Tests.Login@1e1a0406]" started-at="2022-03-03T12:16:56 IST" name="getResult" finished-at="2022-03-03T12:16:56 IST" duration-ms="173" status="PASS">
+        </test-method> <!-- moneylink -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Tests.Login@1e1a0406]" started-at="2022-03-04T16:10:13 IST" name="getResult" finished-at="2022-03-04T16:10:23 IST" duration-ms="9808" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ValidLogin status=FAILURE method=Login.ValidLogin()[pri:3, instance:Tests.Login@1e1a0406] output={null}]]]>
+                <![CDATA[[TestResult name=moneylink status=FAILURE method=Login.moneylink()[pri:2, instance:Tests.Login@1e1a0406] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="afterconfig()[pri:0, instance:Tests.Login@1e1a0406]" started-at="2022-03-03T12:16:56 IST" name="afterconfig" finished-at="2022-03-03T12:16:58 IST" duration-ms="1778" status="PASS">
+        <test-method signature="ValidLogin()[pri:3, instance:Tests.Login@1e1a0406]" started-at="2022-03-04T16:10:23 IST" name="ValidLogin" description="To verify valid login scenario" finished-at="2022-03-04T16:10:30 IST" duration-ms="7046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:Tests.Login@1e1a0406]" started-at="2022-03-04T16:10:30 IST" name="getResult" finished-at="2022-03-04T16:10:30 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidLogin status=SUCCESS method=Login.ValidLogin()[pri:3, instance:Tests.Login@1e1a0406] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="afterconfig()[pri:0, instance:Tests.Login@1e1a0406]" started-at="2022-03-04T16:10:30 IST" name="afterconfig" finished-at="2022-03-04T16:10:32 IST" duration-ms="1970" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterconfig -->
       </class> <!-- Tests.Login -->
-    </test> <!-- Tests -->
-  </suite> <!-- SampleProjectSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

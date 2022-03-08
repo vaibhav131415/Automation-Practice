@@ -29,7 +29,7 @@ public class Login extends Baseclass{
 //		String actual = driver.getTitle();
 //		String Expected = "Rediff.com: News | Rediffmail | Stock Quotes | Shopping";
 		SoftAssert softassert = new SoftAssert();
-		softassert.assertEquals(driver.getTitle(), "Rediff.com: News | Rediffmail | Stock Quotes | Shopping");
+		softassert.assertEquals(driver.getTitle(), "Rediff.com: News | Rediffmail | Stock Quotes | Shoppinghahah/ma");
         softassert.assertAll();
 	}
 

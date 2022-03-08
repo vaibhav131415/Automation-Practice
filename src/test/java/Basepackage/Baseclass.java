@@ -9,11 +9,12 @@ import java.util.Date;
 
 
 import org.apache.commons.io.FileUtils;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -49,13 +50,12 @@ public class Baseclass {
 		// General information releated to application
 		extent.setSystemInfo("Application Name", "Rediff Test");
 		extent.setSystemInfo("User Name", "Vaibhav Prabhu Gaonkar");
-		extent.setSystemInfo("Envirnoment", "Satging");
+		extent.setSystemInfo("Envirnoment", "Staging");
 		
 		//driver setup
-		ChromeOptions chromeOptions= new ChromeOptions();
-		chromeOptions.setBinary("C:\\Users\\vaibhav_p\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
+		
 		System.setProperty("webdriver.chrome.driver", ".//Chromdriver//chromedriver.exe");
-                driver = new ChromeDriver(chromeOptions);
+                driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://rediff.com/");
 		
@@ -68,6 +68,8 @@ public class Baseclass {
 		//clearing the content of the extent report after a test cycle
 		extent.flush();
 		driver.quit();
+		
+	
 		
 	}
 	

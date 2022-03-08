@@ -5,11 +5,10 @@
     <classes>
       <class name="Tests.Login">
         <methods>
-          <include name="Configuration"/>
           <include name="getResult"/>
+          <include name="moneylink"/>
           <include name="afterconfig"/>
-          <include name="ValidLogin"/>
-          <include name="TitleCheck"/>
+          <include name="Configuration"/>
         </methods>
       </class> <!-- Tests.Login -->
     </classes>
